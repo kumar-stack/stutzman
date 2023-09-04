@@ -13,6 +13,7 @@
   left: 0;
   width: 100%;
   z-index: 200;
+  transition: 0.5s all;
 }
 .navbar .container-fluid {
   width: auto;
@@ -30,6 +31,14 @@
   font-family: "georgia";
   text-shadow: 2px 1px #585353;
 }
+.nav_scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #8d7a67 !important;
+  color: white;
+}
+
 @media (width: 375px) {
   .navbar {
     background-color: #002144 !important;
@@ -145,11 +154,15 @@
     font-size: 16px;
     padding: 0;
   }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 1.2rem;
+  }
   .carousel-control-prev {
-    left: 20px;
+    left: 10px;
   }
   .carousel-control-next {
-    right: 20px;
+    right: 10px;
   }
 }
 @media (max-width: 992px) {
@@ -434,6 +447,13 @@
   .Owl_block {
     padding-inline: 1rem;
   }
+  .Owl_block h3 {
+    font-size: 2.5rem;
+    margin-block: 0;
+  }
+  .Owl_block .owl-carousel {
+    margin-top: 0;
+  }
   .Owl_block .owl-carousel .block {
     height: 43rem;
   }
@@ -470,8 +490,11 @@
   padding-block: 2rem;
   padding-inline: 20rem;
 }
+.owl-carousel .owl-stage-outer {
+  padding-top: 4rem;
+}
 .review .reviews {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .review .rv_block {
@@ -516,8 +539,8 @@
   font-size: 19px;
   margin-bottom: 1rem;
 }
-.owl-carousel .owl-stage-outer {
-  padding-top: 4rem;
+.review .rv_block_content a {
+  color: #585353;
 }
 
 @media (width: 375px) {
@@ -596,7 +619,7 @@ footer .ft_botm {
   opacity: 80%;
   padding-inline: 20rem;
   position: relative;
-  bottom: -32px;
+  bottom: -22px;
 }
 footer .ft_botm .fut_bottom {
   display: flex;
