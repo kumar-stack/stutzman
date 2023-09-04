@@ -259,13 +259,14 @@
 
 @media (width: 375px) {
   .welcome a img {
-    margin: 20px 20px 20px 10px;
+    margin: 0 auto;
+    width: 100%;
   }
   .welcome .wel_content h2 {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .welcome a img {
     height: 570px;
     border-radius: 10px;
@@ -329,7 +330,15 @@
   line-height: 2rem;
   font-size: 22px;
 }
-@media (max-width: 992px) {
+@media (width: 375px) {
+  .quality {
+    padding-inline: 1rem;
+  }
+  .quality .quality_content {
+    height: 19rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
   .quality {
     padding-inline: 1rem;
   }
@@ -429,7 +438,7 @@
 }
 @media (width: 375px) {
   .Owl_block {
-    padding-inline: 0.5rem;
+    padding-inline: 1rem;
   }
   .Owl_block h3 {
     font-size: 1.8rem;
@@ -438,12 +447,18 @@
   .Owl_block h3::after {
     bottom: -1rem;
   }
+  .owl-carousel .owl-stage-outer {
+    padding-top: 0 !important;
+  }
+  .Owl_block .owl-carousel .block {
+    height: 34rem;
+  }
   .Owl_block .owl-carousel {
-    margin-top: 3rem;
+    margin-top: 3rem !important;
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .Owl_block {
     padding-inline: 1rem;
   }
@@ -548,7 +563,10 @@
     padding-inline: 1rem;
   }
   .review .rv_block {
-    height: 370px;
+    height: 360px !important;
+  }
+  .owl-carousel .owl-stage-outer {
+    padding-top: 4rem !important;
   }
 }
 @media (max-width: 992px) {
@@ -639,7 +657,7 @@ footer .ft_botm img {
 
 @media (width: 375px) {
   footer {
-    padding-block: 10px;
+    padding-block: 1rem;
   }
   footer .container-fluid {
     padding-inline: 0.5rem;
@@ -650,10 +668,10 @@ footer .ft_botm img {
   footer .fut_block ul {
     padding-inline: 10px;
     border-right: none;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   footer ul .fut_heading {
-    margin-bottom: 15px;
+    margin-bottom: 30px !important;
     font-size: 1.75rem;
   }
   footer ul img {
@@ -668,8 +686,8 @@ footer .ft_botm img {
     font-size: 18px;
   }
   footer .ft_botm {
-    padding-inline: 0rem;
-    bottom: -12px;
+    padding-inline: 0rem !important;
+    bottom: -10px !important;
   }
   footer .ft_botm .fut_bottom {
     justify-content: center;
