@@ -200,7 +200,7 @@
                 <p>
                   Crystal Cove State Park is one of California&rsquo;s largest
                   remaining open spaces and natural coastlines and one of the
-                  top Laguna Beach... <br />
+                  top Laguna Beach and natural ... <br />
                   <a href="#" target="_blank"> ...Read More</a>
                 </p>
               </div>
@@ -215,8 +215,8 @@
                 <h5>Heisler Park</h5>
                 <p>
                   Stretching along the bluffs on Cliff Drive high above Laguna
-                  Beach and offering breathtaking ocean views is Heisler Park, a
-                  lovely green ... <br />
+                  Beach and offering breathtaking ocean and natural coastlines
+                  views is Heisler Park, a lovely green ... <br />
                   <a href="#" target="_blank"> ...Read More</a>
                 </p>
               </div>
@@ -248,7 +248,7 @@
                 <p>
                   The Laguna Art Museum is a fine arts museum located on Cliff
                   Drive in Laguna Beach. Founded in 1918 as the Laguna Beach Art
-                  Association, ...
+                  Associations and natural coastlines ...
                   <a href="#" target="_blank"> ...Read More</a>
                 </p>
               </div>
@@ -446,7 +446,18 @@
           },
         },
       });
+
+      /*adding class in nav on scroll*/
       const nav = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll >= 50) {
+          nav.classList.add("nav_scroll");
+        } else {
+          nav.classList.remove("nav_scroll");
+        }
+      });
     </script>
   </body>
 </html>
